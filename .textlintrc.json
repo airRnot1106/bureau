@@ -1,0 +1,21 @@
+{
+  "plugins": {},
+  "filters": {
+    "comments": true
+  },
+  "rules": {
+    "@textlint-ja/preset-ai-writing": true,
+    "preset-ja-technical-writing": {
+      "no-mix-dearu-desumasu": {
+        "preferInList": "ですます"
+      },
+      "ja-no-mixed-period": {
+        "allowPeriodMarks": [":"]
+      },
+      "no-exclamation-question-mark": false
+    },
+    "terminology": {
+      "exclude": ["V[ -]?S[ -]?Code"]
+    }
+  }
+}

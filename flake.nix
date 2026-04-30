@@ -36,12 +36,13 @@
             markdownlint-cli2
             nixd
             oxfmt
-            textlint
-            textlint-filter-rule-comments
-            textlint-rule-preset-ai-writing
-            textlint-rule-preset-ja-spacing
-            textlint-rule-preset-ja-technical-writing
-            textlint-rule-terminology
+            (textlint.withPackages [
+              textlint-filter-rule-comments
+              textlint-rule-preset-ai-writing
+              textlint-rule-preset-ja-spacing
+              textlint-rule-preset-ja-technical-writing
+              textlint-rule-terminology
+            ])
           ];
         };
         formatter = inputs.treefmt-nix.lib.mkWrapper pkgs {
